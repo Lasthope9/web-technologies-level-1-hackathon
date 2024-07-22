@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <h1 class="blue-heading">This is a Blue Heading</h1>
+    <p class="red-paragraph">This is a red paragraph with font size 15px.</p>
+
+    <a href="https://www.google.com" target="_blank"><i class="fa fas-google">google</i></a>
+
+    <section>
+        <img src="port.jpeg" alt="Sample Image" class="styled-image">
+    </section>
+
+    <section>
+        <form id="registrationForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <fieldset>
+                <legend>Gender:</legend>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </fieldset>
+            <div>
+                <label for="subjects">Select Subjects:</label>
+                <select id="subjects" name="subjects" multiple>
+                    <option value="computer_science">Computer Science</option>
+                    <option value="biology">Biology</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="physics">Physics</option>
+                    <option value="english">English</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="art_and_craft">Art and Craft</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="geography">Geography</option>
+                    <option value="history">History</option>
+                </select>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <input type="hidden" id="sessionId" name="sessionId" value="123456789">
+            </div>
+            <div>
+                <button type="reset">Cancel</button>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
